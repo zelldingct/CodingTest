@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class confirmPalindrome {
+public class confirmPalindrome_7 {
     public String solution(String str){
         String answer = "YES" ;
         str=str.toUpperCase();
@@ -15,7 +15,7 @@ public class confirmPalindrome {
     }
 
     public static void main(String[] args) {
-        confirmPalindrome confirmPalindrome = new confirmPalindrome();
+        confirmPalindrome_7 confirmPalindrome = new confirmPalindrome_7();
         Scanner kb = new Scanner(System.in);
         String str = kb.next();
         System.out.println(confirmPalindrome.solution(str));

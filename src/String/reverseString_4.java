@@ -3,7 +3,7 @@ package String;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class reverseString {
+public class reverseString_4 {
 
     public ArrayList<String> solution( int n, String[] str) {
         ArrayList<String> answer = new ArrayList<>();
@@ -28,7 +28,7 @@ public class reverseString {
     }
 
     public static void main(String[] args) {
-        reverseString reverseString = new reverseString();
+        reverseString_4 reverseString = new reverseString_4();
         Scanner kb = new Scanner(System.in);
         int n = kb.nextInt();
         String[] str = new String[n];

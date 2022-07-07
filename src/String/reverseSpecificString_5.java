@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class reverseSpecificString {
+public class reverseSpecificString_5 {
 
     public String solution(String str) {
         String answer;
@@ -26,7 +26,7 @@ public class reverseSpecificString {
 
 
     public static void main(String[] args) {
-        reverseSpecificString reverseSpecificString = new reverseSpecificString();
+        reverseSpecificString_5 reverseSpecificString = new reverseSpecificString_5();
         Scanner kb = new Scanner(System.in);
         String str = kb.nextLine();
         System.out.println(reverseSpecificString.solution(str));

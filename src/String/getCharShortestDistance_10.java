@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class getCharShortestDistance {
+public class getCharShortestDistance_10 {
 
     public int[] solution (String str, char s){
         int[] answer = new int[str.length()];
@@ -31,7 +31,7 @@ public class getCharShortestDistance {
     }
 
     public static void main(String[] args) {
-        getCharShortestDistance getCharShortestDistance = new getCharShortestDistance();
+        getCharShortestDistance_10 getCharShortestDistance = new getCharShortestDistance_10();
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
         char s = scanner.next().charAt(0);

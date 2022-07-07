@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class compressString {
+public class compressString_11 {
 
     public String solution(String str) {
         String answer = "";
@@ -21,7 +21,7 @@ public class compressString {
     }
 
     public static void main(String[] args) {
-        compressString compressString = new compressString();
+        compressString_11 compressString = new compressString_11();
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
         System.out.println(compressString.solution(str));

@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class deleteDuplicateLetter {
+public class deleteDuplicateLetter_6 {
     public String solution ( String str){
         String answer = "" ;
         for(int i = 0; i<str.length(); i++){
@@ -16,7 +16,7 @@ public class deleteDuplicateLetter {
     }
 
     public static void main(String[] args) {
-        deleteDuplicateLetter deleteDuplicateLetter = new deleteDuplicateLetter();
+        deleteDuplicateLetter_6 deleteDuplicateLetter = new deleteDuplicateLetter_6();
         Scanner kb = new Scanner(System.in);
         String str = kb.next();
         System.out.println(deleteDuplicateLetter.solution(str));

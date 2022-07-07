@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class FindString {
+public class FindString_1 {
     public int solution(String str, char t) {
         int answer = 0;
         str = str.toUpperCase();
@@ -18,7 +18,7 @@ public class FindString {
         }
 
         public static void main (String[] args){
-            FindString T = new FindString();
+            FindString_1 T = new FindString_1();
             Scanner kb = new Scanner(System.in);
             String str = kb.next();
             char c = kb.next().charAt(0);

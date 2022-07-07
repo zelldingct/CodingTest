@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class changeCase {
+public class changeCase_2 {
 
     public String solution(String str){
         String answer = "";
@@ -14,7 +14,7 @@ public class changeCase {
     }
 
     public static void main(String[] args) {
-        changeCase T = new changeCase();
+        changeCase_2 T = new changeCase_2();
         Scanner kb = new Scanner(System.in);
         String str = kb.next();
         System.out.println(T.solution(str));

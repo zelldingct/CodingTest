@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class extractNumbers {
+public class extractNumbers_9 {
     public int solution (String str) {
         int answer = 0;
         for(char x : str.toCharArray()){
@@ -13,7 +13,7 @@ public class extractNumbers {
     }
 
     public static void main(String[] args) {
-        extractNumbers extractNumbers = new extractNumbers();
+        extractNumbers_9 extractNumbers = new extractNumbers_9();
         Scanner scanner = new Scanner(System.in);
         String str = scanner.next();
         System.out.println(extractNumbers.solution(str));

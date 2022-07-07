@@ -2,7 +2,7 @@ package String;
 
 import java.util.Scanner;
 
-public class CrackCode {
+public class CrackCode_12 {
     public String solution (String str,int num){
         String answer = "";
         for(int i=0; i<num; i++){
@@ -16,7 +16,7 @@ public class CrackCode {
     }
 
     public static void main(String[] args) {
-        CrackCode crackCode = new CrackCode();
+        CrackCode_12 crackCode = new CrackCode_12();
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
         String str = scanner.next();

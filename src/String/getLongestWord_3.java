@@ -1,9 +1,8 @@
 package String;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
-public class getLongestWord {
+public class getLongestWord_3 {
 
     public String solution(String str){
         String answer = "";
@@ -31,7 +30,7 @@ public class getLongestWord {
 
 
     public static void main(String[] args) {
-    getLongestWord t = new getLongestWord();
+    getLongestWord_3 t = new getLongestWord_3();
         Scanner kb = new Scanner(System.in);
         String str = kb.nextLine();
         System.out.println(t.solution(str));

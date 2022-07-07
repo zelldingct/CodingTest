@@ -1,9 +1,8 @@
 package String;
 
-import java.util.Locale;
 import java.util.Scanner;
 
-public class confirmPalindrome2 {
+public class confirmPalindrome2_8 {
 
     public String solution(String s){
         String answer = "NO"  ;
@@ -14,7 +13,7 @@ public class confirmPalindrome2 {
     }
 
     public static void main(String[] args) {
-        confirmPalindrome2 confirmPalindrome2 = new confirmPalindrome2();
+        confirmPalindrome2_8 confirmPalindrome2 = new confirmPalindrome2_8();
         Scanner kb = new Scanner(System.in);
         String str = kb.nextLine();
         System.out.println(confirmPalindrome2.solution(str));
