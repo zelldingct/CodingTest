@@ -15,6 +15,7 @@ public class combineTwoArray_1 {
                 answer.add(b[p2++]);
 
             }
+        }
             while (p1 < n) {
                 answer.add(a[p1++]);
             }
@@ -23,10 +24,10 @@ public class combineTwoArray_1 {
             }
 
 
-
-        }
         return answer;
-    }
+        }
+
+
 
         public static void main (String[]args){
             combineTwoArray_1 combineTwoArray = new combineTwoArray_1();
