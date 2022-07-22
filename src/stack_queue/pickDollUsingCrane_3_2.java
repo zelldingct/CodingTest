@@ -3,7 +3,7 @@ package stack_queue;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class pickDollUsingCrane_32 {
+public class pickDollUsingCrane_3_2 {
     public int solution(int n, int[][] board, int m, int[] moves ){
         int answer = 0;
         Stack<Integer> basket = new Stack<>();
@@ -25,7 +25,7 @@ public class pickDollUsingCrane_32 {
     }
 
     public static void main(String[] args) {
-        pickDollUsingCrane_32 pickDollUsingCrane = new pickDollUsingCrane_32();
+        pickDollUsingCrane_3_2 pickDollUsingCrane = new pickDollUsingCrane_3_2();
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[][] board = new int[n][n];

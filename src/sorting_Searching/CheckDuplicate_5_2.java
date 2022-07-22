@@ -3,7 +3,7 @@ package sorting_Searching;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class CheckDuplicate_52 {
+public class CheckDuplicate_5_2 {
     public String solution(int n, int[] arr){
         String answer="U";
         Arrays.sort(arr);
@@ -16,7 +16,7 @@ public class CheckDuplicate_52 {
     }
 
     public static void main(String[] args) {
-        CheckDuplicate_52 checkDuplicate = new CheckDuplicate_52();
+        CheckDuplicate_5_2 checkDuplicate = new CheckDuplicate_5_2();
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] arr = new int[n];
