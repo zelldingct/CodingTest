@@ -2,7 +2,7 @@ package DFS_BFS;
 
 import java.util.Scanner;
 
-public class SolveMaze_10 {
+public class SolveMaze_DFS_10 {
 
     static  int[] dx = {-1, 0, 1, 0};
 
@@ -26,7 +26,7 @@ public class SolveMaze_10 {
     }
 
     public static void main(String[] args) {
-        SolveMaze_10 solveMaze = new SolveMaze_10();
+        SolveMaze_DFS_10 solveMaze = new SolveMaze_DFS_10();
         Scanner scanner = new Scanner(System.in);
         board = new int[8][8];
         for(int i=1; i<=7; i++){
