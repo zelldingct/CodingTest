@@ -1,6 +1,4 @@
-package Recursive_Tree_Graph;
-
-import java.util.Scanner;
+package recursive_Tree_Graph;
 
 public class RecursiveFunction_1 {
     public void DFS (int n){

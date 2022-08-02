@@ -1,4 +1,4 @@
-package Recursive_Tree_Graph;
+package recursive_Tree_Graph;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -1,7 +1,5 @@
 package DFS_BFS;
 
-import Recursive_Tree_Graph.SearchRouteList_13;
-
 import java.util.Scanner;
 
 public class SameSubset_DFS_1 {

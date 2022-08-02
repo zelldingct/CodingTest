@@ -1,4 +1,4 @@
-package Recursive_Tree_Graph;
+package recursive_Tree_Graph;
 
 public class Factorial_3 {
 
