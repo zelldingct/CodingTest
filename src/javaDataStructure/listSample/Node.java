@@ -1,4 +1,4 @@
-package javaDataStructure.linkedListSample;
+package javaDataStructure.listSample;
 
 public class Node<E> {
 
