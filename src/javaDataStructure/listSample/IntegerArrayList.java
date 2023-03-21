@@ -1,5 +1,5 @@
 package javaDataStructure.listSample;
-
+//Integer Version
 public class IntegerArrayList implements IntegerListInterface{
     private Integer[] item;
     private int numItems;
@@ -20,7 +20,8 @@ public class IntegerArrayList implements IntegerListInterface{
             System.out.println("index validation check Error1");
         } else{
             for(int i= numItems-1; i>=index; i--){
-                item[i+1] = item[i];}
+                item[i+1] = item[i];
+            }
                 item[index] = x;
                 numItems++;
 
@@ -121,17 +122,17 @@ public class IntegerArrayList implements IntegerListInterface{
     public static void main(String[] args) {
         IntegerArrayList list = new IntegerArrayList();
         list.add(0,300);
-        list.add(1,200);
-        list.add(2,100);
+        list.add(0,200);
+        list.add(0,100);
         list.append(500);
-//        list.append(600);
-//        list.remove(3);
-//        list.add(3,250);
-//        list.add(1,50);
-//        list.add(0,10);
-//        list.append(700);
-//        list.remove(1);
-//        list.removeItem(600);
+        list.append(600);
+        list.remove(3);
+        list.add(3,250);
+        list.add(1,50);
+        list.add(0,10);
+        list.append(700);
+        list.remove(1);
+        list.removeItem(600);
         for(int i=0; i<list.len(); i++ ){
             System.out.println(list.get(i));
         }
