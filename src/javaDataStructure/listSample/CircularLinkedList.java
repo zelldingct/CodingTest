@@ -1,51 +1,67 @@
 package javaDataStructure.listSample;
-import javaDataStructure.listSample.Node;
 
-import java.sql.SQLOutput;
-
-public class LinkedList<E> implements ListInterface<E> {
-    private Node<E> head;
+public class CircularLinkedList<E> implements ListInterface<E> {
+    private Node<E> tail;
     private int numItems;
 
-    public LinkedList() {
+    public CircularLinkedList() {
         numItems = 0;
-        head = new Node<>(null, null);
+        tail = new Node(-1);
+        tail.next = tail;
     }
 
-
-    public void add(int index, E item) {
+    public Node<E> getNode(int index){
+        if ( index >= -1 && index <= numItems -1 ) {
+            Node<E> currNode = tail.next;
+            for (int i = 0; i <= index; i++) {
+                currNode = currNode.next;
+            }
+            return currNode;
+        }else{
+            return null;
+        }
+    }
+    @Override
+    public void add(int index, E x) {
         if(index >=0 && index <= numItems) {
             Node<E> prevNode = getNode(index-1);
-            Node<E> newNode = new Node<>(item,prevNode.next);
+            Node<E> newNode = new Node<>(x,prevNode.next);
             prevNode.next=newNode;
+            if(index==numItems){
+                tail = newNode;
+            }
             numItems++;
         }
     }
 
-    public void append(E item){
-        Node<E> prevNode = head;
-        while (prevNode.next != null) {
-            prevNode = prevNode.next;
-        }
-        Node<E> newNode = new Node<>(item, null);
+    @Override
+    public void append(E x) {
+        Node<E> prevNode = tail;
+        Node<E> newNode = new Node<>(x, tail.next);
         prevNode.next = newNode;
+        tail = newNode;
         numItems++;
     }
 
+    @Override
     public E remove(int index) {
         if(index >= 0 && index < numItems){
             Node<E> prevNode = getNode(index - 1);
-            Node<E> currNode = prevNode.next;
-            prevNode.next = currNode.next;
+            E ritem = prevNode.next.item;
+            prevNode.next = prevNode.next.next;
+            if(index == numItems){
+                tail =prevNode;
+            }
             numItems--;
-            return currNode.item;
+            return ritem;
         }else{
             return null;
         }
     }
 
+    @Override
     public boolean removeItem(E x) {
-        Node<E> currNode = head;
+        Node<E> currNode = tail.next;
         Node<E> prevNode;
         for(int i=0; i<numItems; i++){
             prevNode = currNode;
@@ -59,7 +75,8 @@ public class LinkedList<E> implements ListInterface<E> {
         return false;
     }
 
-    public E get(int index){
+    @Override
+    public E get(int index) {
         if(index >=0 && index <= numItems-1){
             return getNode(index).item;
         }else{
@@ -67,32 +84,20 @@ public class LinkedList<E> implements ListInterface<E> {
         }
     }
 
-    public Node<E> getNode(int index){
-        if ( index >= -1 && index <= numItems -1 ) {
-            Node<E> currNode = head;
-            for (int i = 0; i <= index; i++) {
-                currNode = currNode.next;
-            }
-            return currNode;
-        }else{
-            return null;
-        }
-    }
-
-    public void set(int index, E x){
+    @Override
+    public void set(int index, E x) {
         if(index >= 0 && index <= numItems -1){
             getNode(index).item = x;
         }else{
             System.out.println("에러발생1");
         }
     }
-
     public final int NOT_FOUND =-12345;
+    @Override
+    public int indexOf(E x) {
+        Node<E> currNode = tail.next;
 
-    public int indexOf(E x){
-        Node<E> currNode = head;
-        int i;
-        for(i=0; i<numItems; i++){
+        for(int i=0; i<numItems; i++){
             currNode = currNode.next;
             if(((Comparable)(currNode.item)).compareTo(x) ==0){
                 return i;
@@ -101,21 +106,25 @@ public class LinkedList<E> implements ListInterface<E> {
         return NOT_FOUND;
     }
 
+    @Override
     public int len() {
         return numItems;
     }
 
-    public boolean isEmpty(){
+    @Override
+    public boolean isEmpty() {
         return numItems ==0;
     }
 
-    public void clear(){
+    @Override
+    public void clear() {
         numItems = 0;
-        head = new Node<>(null, null);
+        tail = new Node(-1);
+        tail.next = tail;
     }
 
     public static void main(String[] arEs) {
-        LinkedList<Integer> list = new LinkedList<>();
+        CircularLinkedList<Integer> list = new CircularLinkedList<>();
         list.add(0,300);
         list.add(0,200);
         list.add(0,100);
