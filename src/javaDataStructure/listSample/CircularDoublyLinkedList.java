@@ -31,7 +31,7 @@ public class CircularDoublyLinkedList<E> implements ListInterface<E>{
         if(index >=0 && index <= numItems) {
             BidirectionalNode<E> prevNode=getNode(index -1 );
             BidirectionalNode<E> newNode = new BidirectionalNode<>(prevNode,x,prevNode.next);
-            prevNode.next.prev=newNode;
+            newNode.next.prev=newNode;
             prevNode.next=newNode;
             numItems++;
         }else{
@@ -140,6 +140,9 @@ public class CircularDoublyLinkedList<E> implements ListInterface<E>{
         list2.removeItem(600);
         for(int i= 0; i<list2.len(); i++ ){
             System.out.print(list2.get(i)+" ");
+
         }
+
+        System.out.println(list2);
     }
 }
