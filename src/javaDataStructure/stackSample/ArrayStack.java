@@ -2,7 +2,7 @@ package javaDataStructure.stackSample;
 
 public class ArrayStack<E> implements StackInterface<E>{
     private E stack[];
-    public int topIndex;
+    private int topIndex;
     private static final int DEFAULT_CAPACITY = 64;
     private final E ERROR = null;
 
