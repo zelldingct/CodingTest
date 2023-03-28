@@ -5,7 +5,7 @@ public class ArrayList<E> implements ListInterface<E> {
     private int numItems;
     private static final int DEFAULT_CAPACITY = 64;
 
-    private ArrayList(){
+    public ArrayList(){
         item = (E[]) new Object[DEFAULT_CAPACITY];
         numItems=0;
     }

@@ -16,4 +16,7 @@ public class Node<E> {
     }
 
 
+    public Node() {
+
+    }
 }
